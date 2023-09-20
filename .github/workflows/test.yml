@@ -1,5 +1,7 @@
 name: 'Get Cover Build'
-on: ['pull_request']
+on:
+  workflow_dispatch:
+  workflow_call:
 
 jobs:
   build: # make sure build/ci work properly
